@@ -1,0 +1,25 @@
+.btn {
+  font-family: var(--font-inter);
+  text-decoration: none;
+  padding: 10px 16px 13px 16px;
+  &-dark {
+    font-size: 1rem;
+    color: var(--color-black);
+    font-weight: 700;
+  }
+
+  &-blue {
+    font-size: 1rem;
+    color: var(--color-white);
+    font-weight: 700;
+    background: var(--color-blue);
+
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: darken(#0A47C9, 10%);
+      color: var(--color-white);
+      // TODO: need to create function / mixin to pass color correctly https://codyhouse.co/blog/post/how-to-combine-sass-color-functions-and-css-variables
+    }
+  }
+}

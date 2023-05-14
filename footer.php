@@ -11,21 +11,80 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wpcatchcode-boat' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'wpcatchcode-boat' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'wpcatchcode-boat' ), 'wpcatchcode-boat', '<a href="https://wpcatchcode.com">Patrick Gielo</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer section flex">
+    <div class="section-wrapper">
+        <div class="columns">
+            <div class="column wider">
+                <a href="#">
+                    <img src="<?= get_template_directory_uri() . '/assets/images/Generix_logo.png'; ?>" alt="Generix Logo">
+                </a>
+                <p>
+                    Generix Express provides customized services for customers around the world from 50+ leading industries. For more
+                    information please
+                </p>
+            </div>
+            <div class="column">
+                <h3>Products</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Enterpise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Customer Stories
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <h3>Products</h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Enterpise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Enterpise
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <h3>Products</h3>
+                <p>
+                    123 Anywhere St., Any City, ST 12345
+                </p>
+                <h3>Products</h3>
+                <p>
+                    123 Anywhere St., Any City, ST 12345
+                </p>
+            </div>
+        </div>
+        <div class="site-footer__bottom-bar">
+            <div class="copyright">
+                © <?= date('Y'); ?> All rights reserved - Generix
+            </div>
+        </div>
+    </div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

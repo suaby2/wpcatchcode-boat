@@ -1,0 +1,16 @@
+footer {
+  padding-top: toRem(100);
+  padding-bottom: toRem(70);
+  &.section {
+
+    .columns {
+      justify-content: space-between;
+      .column {
+        &.wider {
+          max-width: toRem(270);
+          flex-basis: toRem(270);
+        }
+      }
+    }
+  }
+}
